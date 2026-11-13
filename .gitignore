@@ -1,0 +1,11 @@
+# Environment variables / secrets
+.env
+*.tfvars
+*.tfvars.json
+
+# Terraform working directory
+.terraform/
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
