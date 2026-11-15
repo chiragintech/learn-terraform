@@ -20,9 +20,11 @@
 - export TF_VAR_svr_name="prod-db-01" (if starts with TVF_VAR)
 - export AWS_ACCESS_KEY_ID=xxx
 
-`terraform state list` -> resources it managers
+`terraform state list` -> resources it manages
 random_pet.my_pet
 random_pet.name
+
+`terraform state show random_pet.my_pet` -> shows all details of this resource
 
 `terraform -install-autocomplete`
 
@@ -30,3 +32,7 @@ random_pet.name
 `terraform plan --help`
 
 `terraform fmt -recursive` for sub directories too
+
+`terraform output` -> outputs the output block stuff
+`terraform output account_id` -> outputs sensitive info
+`terraform output -json` -> shows sensitive values in json
